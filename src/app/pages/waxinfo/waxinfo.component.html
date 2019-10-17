@@ -1,0 +1,16 @@
+<section>
+    <div class="container barraseccion">
+        <div *ngFor="let waxinfo of waxinfos">
+            <div class="col-xs-12 col-sm-6 barraseccion5">
+                <h2> {{ waxinfo.title | translate }}</h2>
+                <div class="clear"></div>
+                <p>{{'wax.text'| translate}} <br><br>
+                    <p>{{'wax1.text'| translate}} </p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 bord">
+                <img src="{{waxinfo.image}}" alt="Vali Skincare & Makeup {{ waxinfo.title }}">
+            </div>
+        </div>
+    </div>
+</section>

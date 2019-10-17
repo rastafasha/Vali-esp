@@ -1,0 +1,46 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2>{{ 'Body Sculpting' | translate }} </h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>Thinking about your figure and the quickest and simplest way to see you with the dreamed molding, Vali Skincare & Makeup combines techniques to accelerate the process through cavitation, vacuum and radiofrequency.</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/5.BODY-SCULPTING-PACKAGE-TREATMENT-RF-CAVITATION-VACUUM-6-SESSIONS.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+<section>
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all"> {{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menubody></app-menubody>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let sculpting of sculptings; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + sculpting.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + sculpting.image + ')'}">
+                        <div class="conten">
+                            <h3>{{sculpting.title}}</h3>
+                            <button class="btn"> {{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/dn8pwvbsbems5c/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<app-body-s-modal></app-body-s-modal>

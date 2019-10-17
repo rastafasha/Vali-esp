@@ -1,0 +1,47 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2>{{ 'Makeup Classes' | translate }}</h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>In Vali Skincare and Makeup we think of everything, that's why we offer makeup classes, among them we have the personalized, group and professional depending on what you meet your requirements.</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/2.ONE-DAY-GROUP-MAKEUP-CLASS-4-PEOPLE.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all">{{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menumakeup></app-menumakeup>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let clases of clasess; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + clases.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + clases.image + ')'}">
+                        <div class="conten">
+                            <h3>{{clases.title}}</h3>
+                            <button class="btn">{{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/p538c8kp3gy0fm/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<app-makeup-c-modal></app-makeup-c-modal>

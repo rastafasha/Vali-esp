@@ -1,0 +1,23 @@
+<!-- Modal -->
+<div *ngFor="let look of looks; let i = index">
+    <div class="modal fade modalproductos" id="{{look.popup}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modalserv">
+                    <h3>{{look.title}}</h3>
+                    <p [innerHTML]="look.description | keepHtml"></p>
+                </div>
+                <div class="modal-footer">
+                    <h3>${{look.price}}</h3>
+
+                    <!-- Start Square Appointments Embed code --><a class="boton" target="_blank" style=" background-color: #2996cc; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; "
+                        href="{{look.button}}">Book an Appointment</a>
+                    <!-- End Square Appointments Embed code -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

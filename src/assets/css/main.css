@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+@import url("font-awesome.min.css");
+@import url("bootstrap.min.css");
+@import url("reset.css");
+@import url("fonts.css");
+@import url("menuMultinivel.css");
+@import url("backtotop.css");
+@import url("anim.css");
+@import url("animate.css");
+@import url("valistyle.css");
+@import url("masonry.css");
+@import url("modal.css");
+@import url("formularios.css");
+@import url("contact.css");
+@import url("barrasecciones.css");
+@import url("sidebarNavigation.css");
+@import url("treatmentshome.css");
+@import url("cuadrostexto.css");
+@import url("header.css");
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 0;
+}
+
+:root {
+    --rosadoheader: #ffdbd6;
+    --linea: #d1a541;
+    --fuentefooter: #6b5b59;
+    --texto: #6b6b6b;
+    --titulo: #000000;
+    var(--rosadoheader);
+    var(--linea);
+    var(--fuentefooter);
+    var(--texto);
+    var(--titulo);
+}

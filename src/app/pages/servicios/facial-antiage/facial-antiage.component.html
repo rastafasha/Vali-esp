@@ -1,0 +1,50 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2>{{ 'Anti Aging Treatments' | translate }}</h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>We custom an specific facials treatments to prevent and fight off aging skin and wrinkles. In this case, Vali SkinCare & Makeup offer you a variety of options with high technology equipment’s and new techniques to create the best services
+                    near you like oxygenate, clearing dark spots, firming, dry signs, reduce fine lines, deep exfoliations, long term protection with stem cells, intensive hydrations and collagen treatments. to brighten, lift, and find a youthful-looking
+                    skin. </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/3.ANTI-AGING-COLLAGEN-TREATMENT.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all">{{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menufacial></app-menufacial>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let antiage of antiages; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + antiage.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + antiage.image + ')'}">
+                        <div class="conten">
+                            <h3>{{antiage.title}}</h3>
+                            <button class="btn"> {{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/rkcqwtt9qs0i8q/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<app-facial-a-modal></app-facial-a-modal>

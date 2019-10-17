@@ -1,0 +1,50 @@
+<section>
+    <div class="container barraseccion">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 barraseccion5">
+                <h2> {{ 'Hands and Legs' | translate }}</h2>
+                <div class="clear"></div>
+                <div class="col-xs-12">
+                    <p>Our goal is to get you out of our studio pleased with our services, that's why we work creating a series of treatments to cover specific areas forgotten such as hands and feet focusing on athletes, legs with varicose veins and tired,
+                        pain in the bones and articulations, among others, trying to cover to the maximum the needs of our valued clients.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 bord">
+                <img src="./assets/img/servicios/1.HANDS-HYDRATING-WITH-EXFOLIATION-PARAFFIN-TREATMENT.jpg" alt="Vali Skincare & Makeup">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all"> {{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menubody></app-menubody>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let hand of hands; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + hand.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + hand.image + ')'}">
+                        <div class="conten">
+                            <h3>{{hand.title}}</h3>
+                            <button class="btn"> {{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/fa8d5x7ghgzy8j/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<app-body-h-modal></app-body-h-modal>

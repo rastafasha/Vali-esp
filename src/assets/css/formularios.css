@@ -1,0 +1,216 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.ContactoContainer{
+	float:left; 
+	font-size:16px; 
+	text-align:left; 
+	color:#999;
+	font-family: 'HelveticaNeueLTPro-Th';
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ContactoContainer .camp{
+    float:left; 
+    margin-bottom:15px;
+}
+.ContactoContainer .camp2{
+    width: 100%;
+    float:left; 
+    margin-bottom:15px;
+}
+.ContactoContainer textarea{
+    width:100%; 
+    height:100px;
+    margin-top:10px;
+}
+
+@media only screen and (max-width : 600px) {
+    .ContactoContainer .camp{
+    width: 100%;
+    float:left; 
+    margin-bottom:15px;
+}
+    
+}
+	
+ 
+@media only screen and (max-width : 900px) {
+    .ContactoContainer .camp{
+    width: 48%;
+    float:left; 
+    margin-bottom:15px;
+}    
+    .ContactoContainer .camp2{
+    width: 100%;
+    float:left; 
+    margin-bottom:15px;
+}
+    
+}
+	
+
+.cuadroInput{
+    width:100%; 
+    margin-top:10px;
+	border : #9e7746 solid 1px;
+	background-color: #fff;
+	height: 40px;
+	font-size: 14px;
+	text-indent: 5px;
+    border-radius: 0px;
+}
+
+
+
+#direcc{
+	float:left; 
+	text-align:left; 
+	padding:15px;  
+	font-size:14px; 
+	margin-bottom:20px;
+	font-family: 'HelveticaNeueLTPro-Th';
+	color:rgba(102,102,102,1);
+}
+
+.info{
+    min-height:30px;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+.info_social{
+    min-height: 100px;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+.info_social .icon i{
+   font-size: 30px;
+    color: #234090;
+    text-align: center;
+    text-indent: 15px
+
+}
+.info_social h3{
+    margin: 0;
+    
+
+}
+.info_social p{
+    font-size: 14px;
+    padding-top: 20px;
+    
+
+}
+
+#direcc .icon{
+    height: 50px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin: 10px;
+    background: transparent;
+}
+
+#direcc .icon i{
+   font-size: 30px;
+    color: #234090;
+    text-align: center;
+    line-height: 50px;
+    text-indent: 10px;
+
+}
+
+
+
+
+.Social{
+	height:auto;
+	position:relative;
+    float: left;
+}
+
+@media only screen and (max-width : 478px) {
+
+}
+
+
+
+
+
+.sarch {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.sarch button {
+   background-color: #234090;
+    color: #fff;
+    height: 34px;
+}
+.sarch button:hover {
+   background-color: #fff;
+    color:#234090;
+    border: 1px solid #234090;
+}
+
+
+
+.icon_cont {
+    width: 80px;
+    min-height: 90px;
+    height: auto;
+    float: left;
+}
+
+.yaeres {
+    min-height: 100px;
+    height: auto;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+}
+
+.mapa {
+     min-height: 190px;
+    height: auto;
+    border: 1px solid #666;
+    background-color: #f2f2f2;
+    
+}
+
+
+.dropdown{
+    width: 100%;
+    height: 40px !important;
+            background-color: #234090;
+            font-size: 15px;
+            color: #ffffff;
+            vertical-align:middle;
+            margin-right: 6px;
+	border: thin solid #0081b8;
+	font-weight: bold;
+	font-family: open-sans-condensed, sans-serif;
+}
+

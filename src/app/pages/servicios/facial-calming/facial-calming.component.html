@@ -1,0 +1,50 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2> {{ 'Calming Facial Treatments' | translate }}</h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>We create a special treatments for those skins that need to be treated and pampered with different and specific ingredients and therapies for sensitive skins that will help to cleans deeply. Choose your treatment to kill acne bacteria,
+                    heal scar, relax, calm, reduce inflammation or rosacea redness.</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/2.EUROPEAN-FACIAL-DEEP-PORE-CLEANSE.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all"> {{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menufacial></app-menufacial>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let calming of calmings; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + calming.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + calming.image + ')'}">
+                        <div class="conten">
+                            <h3>{{calming.title}}</h3>
+                            <button class="btn btnS">{{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/6xvk53hnohs1bh/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<app-facial-c-modal></app-facial-c-modal>

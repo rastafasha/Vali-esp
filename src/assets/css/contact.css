@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+
+.contact {
+    
+}
+.contact h3{
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.contact hr{
+    color: #9e7746;
+    width: 20%;
+    border-bottom: 1px solid #9e7746;
+}
+.contact ul{
+    display: block;
+    list-style: none
+}
+
+.contact ul li {
+    display: inline-block;
+    font-size: 40px;
+    letter-spacing: 14px;
+
+}
+.contact ul li a{
+    color: #9e7746;
+    text-decoration: none;
+    
+}
+
+.contact img{
+    border: 1px solid #f3c17d;
+}
+.contact img{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact .boton{
+   font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    padding: 10px 10px 10px 5px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    
+}
+
+.fa-map-marker, .fa-phone, .fa-envelope{
+   color: #9e7746;
+    font-size: 20px;
+    margin-right: 7px;
+}

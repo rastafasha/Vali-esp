@@ -1,0 +1,46 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2> {{ 'Fibroblast Body' | translate }}</h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>As we mature our body is presenting signs of aging as loss of elastin producing flaccidity, hyperpigmentation, stretch marks, actinic keratosis and others. Our novel fibroblast treatment helps you to collect excess skin regenerating the
+                    cells responsible for the production of collagen and elastin, achieving a better appearance in areas such as knee, elbow, belly button, neck, abdomen, inner thigh , hands without having to take the risk of going to surgery.</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/5.TOMMY-TIGHTEN.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all"> {{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menufibroblast></app-menufibroblast>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let body of bodys; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + body.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + body.image + ')'}">
+                        <div class="conten">
+                            <h3>{{body.title}}</h3>
+                            <button class="btn">{{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/b1lg4o50oasf8r/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<app-fibroblast-b-modal></app-fibroblast-b-modal>

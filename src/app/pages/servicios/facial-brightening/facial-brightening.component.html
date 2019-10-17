@@ -1,0 +1,49 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2>{{ 'Brightening and Clearing Facial Peel Treatments' | translate }}</h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>Thinking about your skin and the damage occasioned by external factors such as the sun, pregnancy and hormonal processes we offer you at Vali Skincare & Makeup these fabulous therapies to prevent and help you get rid of these damage. There
+                    are excellent treatments to lighten your skin, exfoliate it deeply and clear up the appearance of blemish.</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/5.CLEARING-AND-LIGHTENING-PEELING-TREAT-WITH-PEEL-OFF-BRIGHTENING-MASK.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all">{{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menufacial></app-menufacial>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let brightening of brightenings; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + brightening.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + brightening.image + ')'}">
+                        <div class="conten">
+                            <h3>{{brightening.title}}</h3>
+                            <button class="btn"> {{ 'More' | translate }}</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/c4m8il8em76by4/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<app-facial-b-modal></app-facial-b-modal>

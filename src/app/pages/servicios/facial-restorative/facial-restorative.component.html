@@ -1,0 +1,49 @@
+<section>
+    <div class="container barraseccion">
+        <div class="col-xs-12 col-sm-6 barraseccion5">
+            <h2>{{ 'Restorative Facial Treatments' | translate }}</h2>
+            <div class="clear"></div>
+            <div class="col-xs-12">
+                <p>If you are feeling that your skin have been changing and it cause lowered self-esteem, frustration, and even feelings of hopelessness., We have good news, help is close to you, simple solutions that will help you get back to feeling confident
+                    and vivacious! <br><br> At Vali Skin Care and Makeup we create treatments to help you to fight against the black circles, eyes pyffiness, oxygenate, luminate, detox your skin, giving you a visibly firm, lift, and Nourish skin. The
+                    Restorative Facial Treatments helps to recapture your youth by diminishing the look of fine lines and wrinkles and also helps feed your skin with nourishing, balancing your skin with restorative ingredients to help smooth the appearance.</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 bord">
+            <img src="./assets/img/servicios/CATEGORiA-FacialTreat.jpg" alt="Vali Skincare & Makeup">
+        </div>
+    </div>
+</section>
+<section class="">
+    <div class=" barraseccion-sola"></div>
+</section>
+
+<section class="serviceslist ">
+    <div class="container">
+        <div class="col-sm-3">
+            <h3 data-filter="all"> {{ 'Select Category' | translate }}</h3>
+            <hr>
+            <app-menufacial></app-menufacial>
+        </div>
+        <div class="col-sm-9">
+            <div *ngFor="let restorative of restoratives; let i=index">
+                <a data-toggle="modal" [attr.data-target]="'#' + restorative.popup">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + restorative.image + ')'}">
+                        <div class="conten">
+                            <h3>{{restorative.title}}</h3>
+                            <button class="btn">{{ 'More' | translate }} </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="service-error" *ngIf="error">
+            {{error}}
+        </div>
+    </div>
+</section>
+<div class="container">
+    <iframe src="https://squareup.com/appointments/buyer/widget/46dhcpz1ck3x9v/RFSCRQJSQAYNW" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<app-facial-r-modal></app-facial-r-modal>
