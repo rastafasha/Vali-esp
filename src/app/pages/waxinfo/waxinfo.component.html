@@ -1,11 +1,10 @@
 <section>
     <div class="container barraseccion">
-        <div *ngFor="let waxinfo of waxinfos">
-            <div class="col-xs-12 col-sm-6 barraseccion5">
-                <h2> {{ waxinfo.title | translate }}</h2>
+        <div *ngFor="let waxinfo of waxinfos" class="fr-view">
+            <div class="col-xs-12 col-sm-6 barraseccion5 ">
+                <h2> {{ waxinfo.title }}</h2>
                 <div class="clear"></div>
-                <p>{{'wax.text'| translate}} <br><br>
-                    <p>{{'wax1.text'| translate}} </p>
+                <p [innerHTML]="waxinfo.description  | keepHtml"> </p>
 
             </div>
             <div class="col-xs-12 col-sm-6 bord">

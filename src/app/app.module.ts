@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule, Jsonp, Response} from '@angular/http';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +20,8 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 // pipe
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
+import {FilterPipe} from './pipes/filter.pipe';
+
 
 // Paginas y Compoenentes
 import { HeaderComponent } from './header/header.component';
@@ -116,9 +121,13 @@ import { ResultadosComponent } from './resultados/resultados.component';
 
 // paginas info
 import { WaxinfoComponent } from './pages/waxinfo/waxinfo.component';
-import { SearchComponent } from './search/search.component';
 import { FinancingComponent } from './pages/financing/financing.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { KeysPipe } from './pipes/keys.pipe';
+
+// paginacion
+import {NgxPaginationModule} from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -208,19 +217,21 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     TranslationComponent,
     ResultadosComponent,
     WaxinfoComponent,
-    SearchComponent,
     FinancingComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FilterPipe,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
     ReactiveFormsModule,
     CKEditorModule,
     FormsModule,
+    HttpModule,
+    JsonpModule,
+    NgxPaginationModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

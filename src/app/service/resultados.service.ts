@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpBackend } from '@angular/common/http
 import { throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
-import { Resultados } from '../models/resultados';
+import { Product } from '../models/product';
 
 @Injectable()
 export class ResultadosService {
@@ -14,15 +14,15 @@ export class ResultadosService {
   productos: any[] = [];
   productosFiltrado: any [] = [];
   cargando: boolean ;
-  resultados: Resultados;
+  products: Product;
 
   constructor(handler: HttpBackend, private http: HttpClient) {
     this.http = new HttpClient(handler);
 }
 
 
-get_resultados(id: number) {
-    return this.http.get<Resultados>(this.ServerUrl + 'api/resultados/' + id)
+get_products(text: string) {
+    return this.http.get<Product>(this.ServerUrl + 'api/search/' + text)
     .pipe(
       catchError(this.handleError)
     );

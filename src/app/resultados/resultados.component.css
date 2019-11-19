@@ -7,7 +7,6 @@
     overflow-y: scroll;
     transition: all .3s ease-in;
     padding: 10px;
-    cursor: pointer;
 }
 
 .card>.card-link {
@@ -195,4 +194,20 @@
     .card .card-right {
         widows: 100%;
     }
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6,
+p {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.boton {
+    margin-top: 10px;
 }

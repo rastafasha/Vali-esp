@@ -1,5 +1,5 @@
 <div class="contenedor">
-    <h1>{{ 'principal.texto' | translate }}</h1>
+    <h1>{{ 'principal.texto' }}</h1>
     <div class="contenedor-botones">
         <button [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Español</button>
         <button [ngClass]="{'active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Inglés</button>
