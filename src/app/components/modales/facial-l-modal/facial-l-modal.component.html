@@ -7,14 +7,15 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body modalserv">
-                    <h3>{{luxuring.title}}</h3>
-                    <p [innerHTML]="luxuring.description | keepHtml"></p>
+                    <h3>{{luxuring.titleesp}}</h3>
+                    <p [innerHTML]="luxuring.descriptionesp | keepHtml"></p>
                 </div>
                 <div class="modal-footer">
                     <h3>${{luxuring.price}}</h3>
+                    <h4 class="{{luxuring.is_activeTf}}">{{luxuring.textFinancEsp}}</h4>
 
                     <!-- Start Square Appointments Embed code --><a class="boton" target="_blank" style=" background-color: #2996cc; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; "
-                        href="{{luxuring.button}}">Book an Appointment</a>
+                        href="{{luxuring.button}}">Agendar Cita</a>
                     <!-- End Square Appointments Embed code -->
                 </div>
             </div>

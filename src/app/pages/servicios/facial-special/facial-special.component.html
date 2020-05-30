@@ -2,12 +2,14 @@
     <div class="container barraseccion">
         <div class="row">
             <div class="col-xs-12 col-sm-6 barraseccion5">
-                <h2> {{ 'Special Facial Treatments' }}</h2>
+                <h2> Tratamientos Faciales Especiales</h2>
                 <div class="clear"></div>
                 <div class="col-xs-12">
-                    <p>At Vali Skincare & Makeup a great effort was made to satisfy the demand of our clients, so we thought of all skin types and conditions to offer more treatments and give a variety of options that will help your skin look better, more
-                        healthy and radiant. In this case, we add to the menu of facial treatments a series of cutting-edge procedures with specific functions to treat conditions such as hyperpigmentation, acne, also, we focus on a specific treatment
-                        for the needs of teenagers, face of men and also deep cleaning In the area of ​​the back. We work on improving the texture of your skin, help reduce the size of pores, improve the appearance of stretch marks and much more.</p>
+                    <p>En Vali Skincare & Makeup se hizo un gran esfuerzo para satisfacer la demanda de nuestros clientes, por lo que pensamos en todos los tipos y condiciones de la piel para ofrecer más tratamientos y brindar una variedad de opciones que
+                        ayudarán a que su piel se vea mejor, más saludable y radiante. En este caso, agregamos al menú de tratamientos faciales una serie de procedimientos de vanguardia con funciones específicas para tratar afecciones como la hiperpigmentación,
+                        el acné, incluso tratamiento específico para las necesidades de los adolescentes, la cara de los hombres y también limpieza en la zona de la espalda. Trabajamos para mejorar la textura de su piel, ayudar a reducir el tamaño de
+                        los poros, mejorar la apariencia de las estrías y mucho más.
+                    </p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 bord">
@@ -23,7 +25,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all"> {{ 'Select Category' }}</h3>
+            <h3 data-filter="all"> Seleccionar Categoría</h3>
             <hr>
             <app-menufacial></app-menufacial>
         </div>
@@ -32,8 +34,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + specialf.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + specialf.image + ')'}">
                         <div class="conten">
-                            <h3>{{specialf.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{specialf.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>

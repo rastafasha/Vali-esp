@@ -1,11 +1,13 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2> {{ 'Fibroblast Body' }}</h2>
+            <h2> Fibroblast para el area del cuerpo</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>As we mature our body is presenting signs of aging as loss of elastin producing flaccidity, hyperpigmentation, stretch marks, actinic keratosis and others. Our novel fibroblast treatment helps you to collect excess skin regenerating the
-                    cells responsible for the production of collagen and elastin, achieving a better appearance in areas such as knee, elbow, belly button, neck, abdomen, inner thigh , hands without having to take the risk of going to surgery.</p>
+                <p>A medida que maduramos, nuestro cuerpo presenta signos de envejecimiento como pérdida de elastina que produce flacidez, hiperpigmentación, estrías, queratosis actínica, entre otros. Nuestro novedoso tratamiento con fibroblastos lo ayuda
+                    a recolectar el exceso de piel regenerando las células responsables de la producción de colágeno y elastina, logrando una mejor apariencia en áreas como rodilla, codo, ombligo, cuello, abdomen, muslo interno, manos sin tener que tomar
+                    el riesgo de ir a la cirugía
+                </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
@@ -19,7 +21,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all"> {{ 'Select Category' }}</h3>
+            <h3 data-filter="all"> Seleccionar Categoría</h3>
             <hr>
             <app-menufibroblast></app-menufibroblast>
         </div>
@@ -28,8 +30,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + body.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + body.image + ')'}">
                         <div class="conten">
-                            <h3>{{body.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{body.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>

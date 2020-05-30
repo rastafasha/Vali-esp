@@ -10,4 +10,7 @@ export class Antiage {
     is_featured: boolean;
     is_active: boolean;
     created_at: Date;
+    textFinancEsp: string;
+    textFinancEspEsp: string;
+    is_activeTf: boolean;
 }

@@ -30,8 +30,8 @@ export class ResultadosComponent implements OnInit {
 
 
   type: string;
-    title: string;
-    description: string;
+    titleesp: string;
+    descriptionesp: string;
     price: string;
     popup: string;
     button: string;

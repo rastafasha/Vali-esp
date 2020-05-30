@@ -10,4 +10,6 @@ export class Restorative {
     is_featured: boolean;
     is_active: boolean;
     created_at: Date;
+    textFinancEsp: string;
+    is_activeTf: boolean;
 }

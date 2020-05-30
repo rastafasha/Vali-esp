@@ -1,11 +1,12 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2> {{ 'Calming Facial Treatments' }}</h2>
+            <h2> Tratamientos de Relajación Facial</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>We create a special treatments for those skins that need to be treated and pampered with different and specific ingredients and therapies for sensitive skins that will help to cleans deeply. Choose your treatment to kill acne bacteria,
-                    heal scar, relax, calm, reduce inflammation or rosacea redness.</p>
+                <p>Creamos tratamientos especiales para aquellas pieles que necesitan ser tratadas y mimadas con ingredientes y terapias diferentes y específicas para pieles sensibles que ayudan a limpiar profundamente, eliminar las bacterias del acné, cicatrizando,
+                    relajando, calmando y reduciendo la inflamación y el enrojecimiento por rosácea.
+                </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
@@ -21,7 +22,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all"> {{ 'Select Category' }}</h3>
+            <h3 data-filter="all"> Seleccionar Categoría</h3>
             <hr>
             <app-menufacial></app-menufacial>
         </div>
@@ -30,8 +31,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + calming.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + calming.image + ')'}">
                         <div class="conten">
-                            <h3>{{calming.title}}</h3>
-                            <button class="btn btnS">{{ 'More'  }}</button>
+                            <h3>{{calming.titleesp}}</h3>
+                            <button class="btn btnS">+ info</button>
                         </div>
                     </div>
                 </a>

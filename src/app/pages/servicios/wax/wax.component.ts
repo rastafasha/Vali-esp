@@ -20,5 +20,6 @@ export class WaxComponent implements OnInit {
       (data: Wax) => this.waxs = data,
       error => this.error = error
     );
+     console.log(this.waxService)
   }
 }

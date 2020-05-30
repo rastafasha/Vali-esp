@@ -1,3 +1,4 @@
+
 // paginas
 export {HomeComponent} from '../pages/home/home.component';
 export {GalleryComponent} from '../pages/gallery/gallery.component';
@@ -53,6 +54,8 @@ export { BookingFibroblastHComponent } from './booking/booking-fibroblast-h/book
 export { BookingMakeupBComponent } from './booking/booking-makeup-b/booking-makeup-b.component';
 export { BookingMakeupCComponent } from './booking/booking-makeup-c/booking-makeup-c.component';
 export { BookingMakeupLComponent } from './booking/booking-makeup-l/booking-makeup-l.component';
+export { MembershipComponent } from './membership/membership.component';
+
 
 
 

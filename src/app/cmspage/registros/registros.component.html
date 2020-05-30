@@ -1,11 +1,11 @@
 <div class="page-desc" [hidden]="submitted">
     <form (ngSubmit)="onSubmit()" #registroForm="ngForm">
-        <h3> {{ 'Subscribe to our newsletters' }}</h3>
+        <h3> Subscribirse a nuestro Promo Newsletter</h3>
         <div class="input-group">
             <input type="text" name="email" id="email" [(ngModel)]="model.email" class="form-control" placeholder="E-Mail" required email #email="ngModel">
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
-                <div *ngIf="email?.errors.required"> {{ 'Email is required.' }}</div>
-                <div *ngIf="email?.errors.email"> {{ 'Email must be a valid email address.' }}</div>
+                <div *ngIf="email?.errors.required"> Correo es requerido.</div>
+                <div *ngIf="email?.errors.email"> Debe ser un correo válido.</div>
             </div>
             <div class="input-group-btn">
                 <button [disabled]="!registroForm.form.valid" class="btn btn-default" type="submit"><i class="fa fa-envelope"></i></button>
@@ -19,7 +19,7 @@
 </div>
 <div [hidden]="!submitted" class="contact-message">
     <div *ngIf="model.id" class="contact-success">
-        <h3 class="success"> {{ 'Success!' }}</h3>
-        <h4> {{ 'Subription form has been successfully submitted.' }}</h4>
+        <h3 class="success"> Exito!</h3>
+        <h4> Su solicitud de subscripción ha sido enviada.</h4>
     </div>
 </div>

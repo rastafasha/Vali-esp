@@ -2,13 +2,20 @@
     <div class="container barraseccion">
         <div *ngFor="let waxinfo of waxinfos" class="fr-view">
             <div class="col-xs-12 col-sm-6 barraseccion5 ">
-                <h2> {{ waxinfo.title }}</h2>
+                <h2> Depilacion con Cera</h2>
                 <div class="clear"></div>
-                <p [innerHTML]="waxinfo.description  | keepHtml"> </p>
+                <p>Muchas personas tienen miedo del dolor que se asocia con hacer una depilación con cera. La verdad del asunto es que cuanto más se encere un área específica, menos doloroso será. Al principio, el dolor será impactante, pero si sigues recibiendo
+                    cera de vez en cuando, te acostumbrarás. La eliminación del vello dura más que el afeitado, ya que lo extrae directamente de sus raíces. Cuando enceras, no corres el riesgo de sufrir cortes o cicatrices como cuando te afeitas. Es posible
+                    que tenga sarpullidos después del afeitado, especialmente si tiene piel sensible. La depilación no te dejará ningún sarpullido. La depilación no consume mucho tiempo, es rápido y conveniente. Garantizamos el uso del mejor producto
+                    en el mercado del cuidado de la piel para garantizar los mejores resultados en el tratamiento que elija.
+
+
+                    <br><br> El especialista en cuidado de la piel en nuestro lugar puede ayudarlo a eliminar todo o parte de su cabello en áreas de su cuerpo que no querría tener allí. Llama hoy para concertar una cita con nosotros. Te sentirás bella
+                    y suave como la seda. </p>
 
             </div>
             <div class="col-xs-12 col-sm-6 bord">
-                <img src="{{waxinfo.image}}" alt="Vali Skincare & Makeup {{ waxinfo.title }}">
+                <img src="{{waxinfo.image}}" alt="Vali Skincare & Makeup {{ waxinfo.titleesp }}">
             </div>
         </div>
     </div>

@@ -2,10 +2,11 @@
     <div class="container barraseccion">
         <div class="row">
             <div class="col-xs-12 col-sm-6 barraseccion5">
-                <h2> {{ 'Body Wrapping' }} </h2>
+                <h2> Envoltura Corporal (Body Wrapping) </h2>
                 <div class="clear"></div>
                 <div class="col-xs-12">
-                    <p>At Vali Skincare and Makeup we create an ideal place for your body, focusing on the reduction of measures using non-invasive methods and cutting-edge techniques with firming, modeling and reductive therapies.</p>
+                    <p>En Vali Skincare and Makeup creamos un lugar ideal para tu cuerpo, enfocándonos en la reducción de medidas usando métodos no invasivos y técnicas de vanguardia con terapias reafirmantes, de modelado y reductoras.
+                    </p>
                 </div>
             </div>
             <div class=" col-xs-12 col-sm-6 bord">
@@ -21,7 +22,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all">{{ 'Select Category' }}</h3>
+            <h3 data-filter="all">Seleccionar Categoría</h3>
             <hr>
             <app-menubody></app-menubody>
         </div>
@@ -30,8 +31,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + wrapping.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + wrapping.image + ')'}">
                         <div class="conten">
-                            <h3>{{wrapping.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{wrapping.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>

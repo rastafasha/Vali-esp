@@ -25,26 +25,26 @@ export class BrighteningService {
   }
 
   getBrightenings() {
-    return this.http.get<Brightening>(this.ServerUrl + 'api/brightenings').pipe(
-      catchError(this.handleError)
-    );
-  }
-
-  getFeaturedBrightenings() {
-    return this.http.get<Brightening>(this.ServerUrl + 'api/featured_brightenings').pipe(
+    return this.http.get<Brightening>(this.ServerUrl + 'api_brightening/brightenings').pipe(
       catchError(this.handleError)
     );
   }
 
   getBrightening(id: number) {
-    return this.http.get<Brightening>(this.ServerUrl + 'api/brightenings/' + id)
+    return this.http.get<Brightening>(this.ServerUrl + 'api_brightening/brightenings/' + id)
     .pipe(
       catchError(this.handleError)
     );
   }
 
+  getFeaturedBrightenings() {
+    return this.http.get<Brightening>(this.ServerUrl + 'api_brightening/featured_brightenings').pipe(
+      catchError(this.handleError)
+    );
+  }
+
   getRecentBrightenings() {
-    return this.http.get<Brightening>(this.ServerUrl + 'api/recent_brightenings').pipe(
+    return this.http.get<Brightening>(this.ServerUrl + 'api_brightening/recent_brightenings').pipe(
       catchError(this.handleError)
     );
   }

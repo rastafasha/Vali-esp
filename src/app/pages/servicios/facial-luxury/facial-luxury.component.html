@@ -1,12 +1,14 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2> {{ 'Luxury Facial Treatments' }}</h2>
+            <h2> Tratamientos de Lujo</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>Exclusive treatments at Vali Skincare & Makeup includes highly effective top performing modalities in Spa technology. Hydra Facials with soothing and invigorating spa therapies to achieve instant hydration and lasting results without any
-                    discomfort or downtime. Microcurrents are then used for firming and lifting. Galvanic technology propels high-potent actives deep into the skin, minimizing lines, wrinkles, hyper-pigmentation and sensitivity. Oxygen infusion drives
-                    potent actives to restore elasticity, stimulate tissue, repair, heal and rebalance the skin. These treatments are completed with our Luxury face neck and décolleté hydroplastic mask, leaving the skin ready for a close up.</p>
+                <p>Tratamientos exclusivos en Vali Skincare & Makeup que incluyen las mejores tecnologías de Spa con resultados altamente efectivos. Hidrofaciales con terapias calmantes y vigorizantes para lograr una hidratación instantánea y resultados
+                    duraderos sin molestias ni tiempo de inactividad. También ofrecemos microcorrientes para reafirmar y levantar, tecnología galvánica en lo profundo de la piel que minimiza las arrugas, hiperpigmentación y sensibilidad, así mismo realizamos
+                    infusión de oxígeno que impulsa activos potentes para restaurar la elasticidad, estimular la reparación del tejido, curar y reequilibrar la piel. Estos tratamientos se completan con nuestra mascarilla hidroplástica para escote, cuello
+                    y rostro.
+                </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
@@ -21,7 +23,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all"> {{ 'Select Category' }}</h3>
+            <h3 data-filter="all"> Seleccionar Categoría</h3>
             <hr>
             <app-menufacial></app-menufacial>
         </div>
@@ -30,8 +32,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + luxuring.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + luxuring.image + ')'}">
                         <div class="conten">
-                            <h3>{{luxuring.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{luxuring.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>

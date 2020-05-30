@@ -10,4 +10,6 @@ export class Bridal {
     is_featured: boolean;
     is_active: boolean;
     created_at: Date;
+    textFinancEspEsp: string;
+    is_activeTf: boolean;
 }

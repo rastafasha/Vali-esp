@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public activeLang = 'en';
+  public activeLang = 'es';
 
   flag = false;
 

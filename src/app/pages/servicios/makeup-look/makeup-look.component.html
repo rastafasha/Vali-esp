@@ -1,11 +1,12 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2> {{ 'Makeup Looks' }}</h2>
+            <h2> Maquillaje</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>Our team of professional are trained to recreate in your face different types of makeup and looks for events, any occasion, weddings, sweet sixteen, christenings, quinceaneras, bar mitzvah, first communion or a special night with your
-                    love!
+                <p>Nuestro equipo de profesionales está capacitado para recrear en tu rostro diferentes tipos de maquillaje para eventos, en cualquier ocasión, bodas, dieciséis dulces, bautizos, quinceañeras, bar mitzvah, primera comunión o una noche especial
+                    con tu amor.
+
                 </p>
             </div>
         </div>
@@ -21,7 +22,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all"> {{ 'Select Category' }}</h3>
+            <h3 data-filter="all"> Seleccionar Categoría</h3>
             <hr>
             <app-menumakeup></app-menumakeup>
         </div>
@@ -30,8 +31,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + look.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + look.image + ')'}">
                         <div class="conten">
-                            <h3>{{look.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{look.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>

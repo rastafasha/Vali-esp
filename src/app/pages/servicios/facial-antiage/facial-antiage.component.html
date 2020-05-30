@@ -1,12 +1,15 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2>{{ 'Anti Aging Treatments' }}</h2>
+            <h2>Tratamientos Anti Edad</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>We custom an specific facials treatments to prevent and fight off aging skin and wrinkles. In this case, Vali SkinCare & Makeup offer you a variety of options with high technology equipment’s and new techniques to create the best services
-                    near you like oxygenate, clearing dark spots, firming, dry signs, reduce fine lines, deep exfoliations, long term protection with stem cells, intensive hydrations and collagen treatments. to brighten, lift, and find a youthful-looking
-                    skin. </p>
+                <p>Realizamos tratamientos faciales específicos para prevenir y combatir el envejecimiento de la piel y las arrugas. En este caso, Vali SkinCare & Makeup le ofrece una variedad de opciones con equipos de alta tecnología y nuevas técnicas
+                    para crear los mejores servicios cerca de usted, como oxigenar, eliminar manchas, reafirmar, mejorar la resequedad, reducir líneas finas, exfoliaciones profundas, protección a largo plazo con células madre, hidrataciones intensivas
+                    y tratamientos de colágeno. para iluminar, levantar y encontrar una piel de aspecto juvenil.
+
+                    <br><br> Para obtener mejores resultados, recomendamos uno de estos tratamientos cada 15 días.
+                </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
@@ -21,7 +24,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all">{{ 'Select Category' }}</h3>
+            <h3 data-filter="all">Seleccionar Categoría</h3>
             <hr>
             <app-menufacial></app-menufacial>
         </div>
@@ -30,8 +33,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + antiage.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + antiage.image + ')'}">
                         <div class="conten">
-                            <h3>{{antiage.title}}</h3>
-                            <button class="btn"> {{ 'More'  }}</button>
+                            <h3>{{antiage.titleesp}}</h3>
+                            <button class="btn"> + info</button>
                         </div>
                     </div>
                 </a>

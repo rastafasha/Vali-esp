@@ -1,10 +1,11 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2>{{ 'Makeup Classes' }}</h2>
+            <h2>Curso de Maquillaje</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>In Vali Skincare and Makeup we think of everything, that's why we offer makeup classes, among them we have the personalized, group and professional depending on what you meet your requirements.</p>
+                <p>En Vali Skincare and Makeup pensamos en todo, es por eso que ofrecemos clases de maquillaje, entre ellas contamos con cursos personalizado, grupal y profesional en función de lo que cumpla con sus requisitos.
+                </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
@@ -19,7 +20,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all">{{ 'Select Category' }}</h3>
+            <h3 data-filter="all">Seleccionar Categoría</h3>
             <hr>
             <app-menumakeup></app-menumakeup>
         </div>
@@ -28,8 +29,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + clases.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + clases.image + ')'}">
                         <div class="conten">
-                            <h3>{{clases.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{clases.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>

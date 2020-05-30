@@ -1,11 +1,12 @@
 <section>
     <div class="container barraseccion">
         <div class="col-xs-12 col-sm-6 barraseccion5">
-            <h2> {{ 'Fibroblast Face' }}</h2>
+            <h2> Fibroblast en Zona del Rotro</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>You have thought about how to eliminate or diminish the signs of aging such as lines of expression, static wrinkles and photo-aging on your face, eyelid fading, sleepiness and inferiority, damage caused by the sun, spots due to pregnancy
-                    and other causes. In this cozy space we offer you the solution without having to go to surgery, do not think about it and make your appointment.</p>
+                <p>Ha pensado en cómo eliminar o disminuir los signos del envejecimiento, como líneas de expresión, arrugas estáticas y fotoenvejecimiento en la cara, decoloración de los párpados, somnolencia e inferioridad, daños causados por el sol, manchas
+                    debidas al embarazo y otras causas. En este acogedor espacio le ofrecemos la solución sin tener que acudir a la cirugía, no lo piense y haga su cita.
+                </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
@@ -20,7 +21,7 @@
 <section class="serviceslist ">
     <div class="container">
         <div class="col-sm-3">
-            <h3 data-filter="all"> {{ 'Select Category' }}</h3>
+            <h3 data-filter="all"> Seleccionar Categoría</h3>
             <hr>
             <app-menufibroblast></app-menufibroblast>
         </div>
@@ -29,8 +30,8 @@
                 <a data-toggle="modal" [attr.data-target]="'#' + fibroface.popup">
                     <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + fibroface.image + ')'}">
                         <div class="conten">
-                            <h3>{{fibroface.title}}</h3>
-                            <button class="btn">{{ 'More'  }}</button>
+                            <h3>{{fibroface.titleesp}}</h3>
+                            <button class="btn">+ info</button>
                         </div>
                     </div>
                 </a>
