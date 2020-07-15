@@ -124,9 +124,13 @@
     .tope ul li {
         display: inline-block;
         list-style: none;
-        margin-right: 3px;
+        margin-right: 6px;
         font-family: 'Lato', sans-serif !important;
         font-weight: 400;
+        font-size: 12px;
+    }
+    .bandera img {
+        height: 23px;
     }
 }
 
@@ -202,19 +206,67 @@
 }
 
 .dropdown-menu>li>a {
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 .dropdown-submenu .dropdown-menu li a {
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+
+/*------- menu  funcionando -----*/
+
+@media(max-width:480px) {
+    .tope ul li a img {
+        margin-top: -3px;
+    }
 }
 
 @media (min-width: 768px) {
     .navbar-nav {
         float: right !important;
     }
+    .nav>li>a {
+        padding: 10px 14px;
+    }
+    .navbar-nav {
+        margin-top: -20px;
+    }
 }
 
-.nav>li>a {
-    padding: 10px 14px;
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 14px;
+    }
+    .nav>li>a {
+        padding: 8px 3px !important;
+    }
+}
+
+@media ( min-width:1024px) {
+    .navbar a {
+        font-size: 16px;
+    }
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 5px 7px !important;
+    }
+    .logo img {
+        width: 45%;
+        display: block;
+        margin-top: -60px
+    }
+}
+
+@media (min-width: 768px) and ( max-width:1024px) {
+    .navbar-nav {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .tope i {
+        font-size: 14px;
+    }
 }

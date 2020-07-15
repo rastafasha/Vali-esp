@@ -128,6 +128,8 @@ import { KeysPipe } from './pipes/keys.pipe';
 // paginacion
 import {NgxPaginationModule} from 'ngx-pagination';
 import { MembershipComponent } from './pages/membership/membership.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { FranchiseComponent } from './pages/franchise/franchise.component';
 
 
 @NgModule({
@@ -223,6 +225,8 @@ import { MembershipComponent } from './pages/membership/membership.component';
     FilterPipe,
     KeysPipe,
     MembershipComponent,
+    ContactComponent,
+    FranchiseComponent,
   ],
   imports: [
     BrowserModule,

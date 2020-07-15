@@ -7,10 +7,10 @@ export class Page {
     titulo: string;
     descripcionesp: string;
     descripcionesp2: string;
-    video: string;
     image: string;
-    verVideo: string;
     verImagen: string;
+    videoEsp: string;
+    verVideoEsp: string;
     is_featured: boolean;
     is_active: boolean;
     created_at: Date;

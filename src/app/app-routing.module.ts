@@ -22,6 +22,8 @@ import { ResultadosComponent} from './resultados/resultados.component';
 
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { MembershipComponent } from './pages/membership/membership.component';
+import { FranchiseComponent } from './pages/franchise/franchise.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -79,9 +81,10 @@ const routes: Routes = [
 
   {path: 'financiamiento', component: FinancingComponent},
   {path: 'membresia', component: MembershipComponent},
+  {path: 'franquicia', component: FranchiseComponent},
   {path: 'galeria', component: GalleryComponent},
   {path: 'promos', component: SpecialsComponent},
-  {path: 'contact', component: ContactFormComponent},
+  {path: 'contactenos', component: ContactComponent},
   {path: 'buscar', component: ResultadosComponent},
   {path: 'buscar/:termino', component: ResultadosComponent},
   {path: '', redirectTo: '', pathMatch: 'full'},

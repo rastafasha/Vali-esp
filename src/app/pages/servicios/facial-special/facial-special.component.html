@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 bord">
-                <img src="./assets/img/servicios/CATEGORiA-FACIAL.jpg" alt="Vali Skincare & Makeup">
+                <img src="./assets/img/servicios/CATEGORiA-FACIAL.jpg" alt="Tratamientos Faciales Especiales Vali Skincare & Makeup">
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="col-sm-9">
             <div *ngFor="let specialf of specialfs; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + specialf.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + specialf.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + specialf.image + ')'}" title="Vali Skincare & Makeup {{specialf.titleesp}}">
                         <div class="conten">
                             <h3>{{specialf.titleesp}}</h3>
                             <button class="btn">+ info</button>

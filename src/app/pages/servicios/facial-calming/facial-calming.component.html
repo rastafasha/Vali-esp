@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/2.EUROPEAN-FACIAL-DEEP-PORE-CLEANSE.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/2.EUROPEAN-FACIAL-DEEP-PORE-CLEANSE.jpg" alt="Tratamientos de Relajación Facial Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -29,7 +29,7 @@
         <div class="col-sm-9">
             <div *ngFor="let calming of calmings; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + calming.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + calming.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + calming.image + ')'}" title="Vali Skincare & Makeup {{calming.titleesp}}">
                         <div class="conten">
                             <h3>{{calming.titleesp}}</h3>
                             <button class="btn btnS">+ info</button>

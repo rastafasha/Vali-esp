@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/5.CLEARING-AND-LIGHTENING-PEELING-TREAT-WITH-PEEL-OFF-BRIGHTENING-MASK.jpg" alt="Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/5.CLEARING-AND-LIGHTENING-PEELING-TREAT-WITH-PEEL-OFF-BRIGHTENING-MASK.jpg" alt="Tratamientos Faciales para iluminar y aclarar la piel Vali Skincare & Makeup">
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let brightening of brightenings; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + brightening.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + brightening.image + ')'}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + brightening.image + ')'}" title="Vali Skincare & Makeup {{brightening.titleesp}}">
                         <div class="conten">
                             <h3>{{brightening.titleesp}}</h3>
                             <button class="btn"> + info</button>

@@ -28,7 +28,7 @@
     <div class="container">
         <div *ngFor="let wax of waxs; let i=index">
             <a data-toggle="modal" [attr.data-target]="'#' + wax.popup">
-                <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + wax.image + ')'}">
+                <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + wax.image + ')'}" title="Vali Skincare & Makeup {{wax.titleesp}}">
                     <div class="conten">
                         <h3>{{wax.titleesp}}</h3>
                         <button class="btn">+ info</button>

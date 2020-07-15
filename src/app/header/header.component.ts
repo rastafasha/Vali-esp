@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -13,8 +14,9 @@ export class HeaderComponent implements OnInit {
 
   flag = false;
 
+  ServerUrl = environment.baseUrl;
 
-  
+
   constructor(private router: Router, private translate: TranslateService) {
     this.translate.setDefaultLang(this.activeLang);
   }
@@ -35,8 +37,8 @@ export class HeaderComponent implements OnInit {
     this.flag = !this.flag;
   }
 
-  
 
-  
+
+
 
 }
