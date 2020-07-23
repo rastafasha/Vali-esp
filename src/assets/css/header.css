@@ -25,7 +25,7 @@
 
 header {
     width: 100%;
-    height: 157px;
+    height: 140px;
     background-color: var(--rosadoheader);
     border-bottom: 1px solid var(--linea);
     border-top: 1px solid var(--linea);
@@ -40,9 +40,9 @@ header {
         display: block;
     }
     .logo img {
-        width: 23%;
+        width: 24%;
         display: block;
-        margin-top: -88px;
+        margin-top: -80px;
         float: left;
         margin-left: 0px;
     }
@@ -96,6 +96,8 @@ header {
         top: 0px;
         max-width: 90%;
         height: 100vh;
+        position: absolute;
+        z-index: 99999;
     }
     .navbar-toggle .icon-bar {
         background-color: black;
@@ -109,50 +111,26 @@ header {
     .visible-smmalc {
         display: none;
     }
-}
-
-@media (max-width:770px) {
-    .navbar-nav {
-        margin-top: -30px;
+    .logo img {
+        width: 28%;
+        display: block;
+        margin-top: -70px;
     }
     .logo img {
         width: 25%;
         display: block;
-        margin-top: -90px;
-    }
-    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-        color: #fff !important;
-    }
-    .navbar-inverse .navbar-nav>li>a {
-        color: #fff !important;
-    }
-}
-
-@media (min-width: 769px) and ( max-width:1024px) {
-    .navbar a {
-        font-size: 14px;
-    }
-    header {
-        height: 140px;
-    }
-    .navbar-nav {
-        margin-top: -20px;
-    }
-    .logo img {
-        width: 30%;
-        display: block;
-        margin-top: -60px
+        margin-top: -60px;
     }
 }
 
 @media ( min-width:1020px) {
     .navbar a {
-        font-size: 16px;
+        font-size: 14px;
     }
     .logo img {
         width: 40%;
         display: block;
-        margin-top: -65px;
+        margin-top: -60px;
     }
 }
 
@@ -163,9 +141,9 @@ header {
         height: 77px;
     }
     .logo img {
-        width: 25%;
+        width: 26%;
         display: block;
-        margin-top: -80px;
+        margin-top: -73px;
     }
     .sidebarNavigation .left-navbar-toggle {
         float: left;
@@ -212,8 +190,69 @@ header {
 
 @media (max-width: 320px) {
     .logo img {
-        width: 18%;
+        width: 20%;
         display: block;
         margin-top: -70px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 769px) and ( max-width:1024px) {
+    .navbar a {
+        font-size: 14px;
+    }
+    header {
+        height: 140px;
+    }
+    .navbar-nav {
+        margin-top: -20px;
+    }
+    .logo img {
+        width: 30%;
+        display: block;
+        margin-top: -60px
+    }
+    .navbar-nav {
+        margin-top: -40px;
+        float: left;
+        display: grid;
+    }
+    header {
+        height: 114px;
+    }
+}
+
+
+/*--- ipad --*/
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:portrait) {
+    .navbar a {
+        font-size: 14px;
+    }
+    .logo img {
+        width: 23%;
+        display: block;
+        margin-top: -60px
+    }
+    .navbar-nav {
+        margin-top: -70px;
+    }
+    header {
+        height: 100px;
+    }
+    .navbar-nav {
+        margin-top: -70px;
+        position: relative;
+        left: 0;
+        top: 30px;
+        display: grid;
+    }
+}
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:landscape) {
+    .logo img {
+        width: 35%;
+        display: block;
+        margin-top: -65px;
     }
 }

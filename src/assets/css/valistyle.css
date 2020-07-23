@@ -5,29 +5,8 @@
 
 /* Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
-.logo img {
-    width: 45%;
-    display: block;
-    margin-top: -60px
-}
-
-@media(max-width:480px) {
-    .logo img {
-        width: 30%;
-        display: block;
-        margin: 0 auto;
-        margin-top: -80px;
-    }
-}
-
-@media(min-width:1024px) {
-    .logo img {
-        width: 40%;
-    }
-}
-
 body,
-hthml {
+html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif !important;
@@ -133,6 +112,13 @@ footer h3 {
     font-size: 18px;
 }
 
+footer iframe {
+    display: block;
+    margin: auto;
+    position: relative;
+    left: 23%;
+}
+
 .espacio {
     margin: 0;
     padding: 0;
@@ -163,8 +149,6 @@ footer h3 {
         height: 57px;
     }
 }
-
-.slider {}
 
 .slider img {
     display: block;
@@ -389,8 +373,6 @@ footer h3 {
 
 /*----services---*/
 
-.serviceslist {}
-
 .serviceslist h3,
 .bodypage h3 {
     font-family: 'Lato', sans-serif !important;
@@ -611,4 +593,41 @@ hr.fibr {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9e7746', endColorstr='#9e7746', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
+}
+
+.page-desc h3 {
+    text-align: center;
+}
+
+
+/*----ipad----*/
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:portrait) {
+    footer iframe {
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 6%;
+    }
+    .parallax {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:landscape) {
+    footer iframe {
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 18%;
+    }
+    .parallax {
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
 }

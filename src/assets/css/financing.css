@@ -76,7 +76,7 @@
     color: #fff;
     margin: 5px;
     float: left;
-    width: 30%;
+    width: 31.3%;
 }
 
 .promofinancing:nth-child(2) {
@@ -112,6 +112,22 @@
     list-style: none;
     font-weight: bold !important;
     font-size: 18px;
+}
+
+.promofinancing ul {
+    padding: 0;
+}
+
+.degradefinancing {
+    color: #fff;
+    margin-top: 40px;
+    padding: 40px 0px;
+}
+
+.degradefinancing h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 @media(max-width:480px) {
@@ -155,5 +171,20 @@
 @media only screen and ( min-width:490px) and ( max-width:736px) {
     .promofinancing {
         height: 67vh;
+    }
+}
+
+@media (min-width: 761px) and ( max-width:1024px) and (orientation:portrait) {
+    .promofinancing {
+        height: 26vh;
+    }
+    .degradefinancing h4 {
+        font-size: 22px;
+    }
+    .financing h2 {
+        font-size: 30px;
+    }
+    .financing h1 {
+        font-size: 31px !important;
     }
 }
