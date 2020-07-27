@@ -1,10 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule, HttpClient, HttpClientJsonpModule, HttpErrorResponse } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule, Jsonp, Response} from '@angular/http';
-
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -235,8 +233,7 @@ import { FranchiseComponent } from './pages/franchise/franchise.component';
     ReactiveFormsModule,
     CKEditorModule,
     FormsModule,
-    HttpModule,
-    JsonpModule,
+    HttpClientJsonpModule,
     NgxPaginationModule,
     TranslateModule.forRoot({
       loader: {
