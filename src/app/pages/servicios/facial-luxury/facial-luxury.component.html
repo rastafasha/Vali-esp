@@ -4,15 +4,14 @@
             <h2> Tratamientos de Lujo</h2>
             <div class="clear"></div>
             <div class="col-xs-12">
-                <p>Tratamientos exclusivos en Vali Skincare & Makeup que incluyen las mejores tecnologías de Spa con resultados altamente efectivos. Hidrofaciales con terapias calmantes y vigorizantes para lograr una hidratación instantánea y resultados
-                    duraderos sin molestias ni tiempo de inactividad. También ofrecemos microcorrientes para reafirmar y levantar, tecnología galvánica en lo profundo de la piel que minimiza las arrugas, hiperpigmentación y sensibilidad, así mismo realizamos
-                    infusión de oxígeno que impulsa activos potentes para restaurar la elasticidad, estimular la reparación del tejido, curar y reequilibrar la piel. Estos tratamientos se completan con nuestra mascarilla hidroplástica para escote, cuello
-                    y rostro.
+                <p>Tratamientos exclusivos en Vali Spa que incluyen las mejores tecnologías de Spa con resultados altamente efectivos. Hidrofaciales con terapias calmantes y vigorizantes para lograr una hidratación instantánea y resultados duraderos sin
+                    molestias ni tiempo de inactividad. También ofrecemos microcorrientes para reafirmar y levantar, tecnología galvánica en lo profundo de la piel que minimiza las arrugas, hiperpigmentación y sensibilidad, así mismo realizamos infusión
+                    de oxígeno que impulsa activos potentes para restaurar la elasticidad, estimular la reparación del tejido, curar y reequilibrar la piel. Estos tratamientos se completan con nuestra mascarilla hidroplástica para escote, cuello y rostro.
                 </p>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-luxury.jpg" alt="Tratamientos de Lujo Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-luxury.jpg" alt="Tratamientos de Lujo Vali Spa">
         </div>
     </div>
 </section>
@@ -30,7 +29,7 @@
         <div class="col-sm-9">
             <div *ngFor="let luxuring of luxurings; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + luxuring.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + luxuring.image + ')'}" title="Vali Skincare & Makeup {{luxuring.titleesp}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + luxuring.image + ')'}" title="Vali Spa {{luxuring.titleesp}}">
                         <div class="conten">
                             <h3>{{luxuring.titleesp}}</h3>
                             <button class="btn">+ info</button>

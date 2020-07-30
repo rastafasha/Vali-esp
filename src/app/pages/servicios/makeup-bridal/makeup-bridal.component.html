@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 bord">
-            <img src="./assets/img/servicios/CATEGORiA-MakeupBridal.jpg" alt="Maquillaje de Novia Vali Skincare & Makeup">
+            <img src="./assets/img/servicios/CATEGORiA-MakeupBridal.jpg" alt="Maquillaje de Novia Vali Spa">
         </div>
     </div>
 </section>
@@ -28,7 +28,7 @@
         <div class="col-sm-9">
             <div *ngFor="let bridal of bridals; let i=index">
                 <a data-toggle="modal" [attr.data-target]="'#' + bridal.popup">
-                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + bridal.image + ')'}" title="Vali Skincare & Makeup {{bridal.titleesp}}">
+                    <div class="col-xs-6 col-sm-3 cuadro cuadro3" [ngStyle]="{'background-image': 'url(' + bridal.image + ')'}" title="Vali Spa {{bridal.titleesp}}">
                         <div class="conten">
                             <h3>{{bridal.titleesp}}</h3>
                             <button class="btn">+ info</button>
