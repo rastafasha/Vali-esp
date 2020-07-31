@@ -5,7 +5,8 @@ export class Wax {
     description: string;
     price: string;
     popup: string;
-    button: string;
+    buttonEs: string;
+    target: string;
     image: string;
     titleesp: string;
     descriptionesp: string;
