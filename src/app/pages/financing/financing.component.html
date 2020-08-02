@@ -12,8 +12,21 @@
             <h1>COMPRE AHORA</h1>
             <h2>Y PAGUE MENSUALMENTE!</h2>
         </div>
-        <div class="col-xs-12 col-sm-7 financing">
+        <!---video estatico-->
+        <!--div class="col-xs-12 col-sm-7 financing">
             <iframe class="shadow" src="https://www.youtube.com/embed/1eitF0R1u0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        </div-->
+
+        <!---video Dinamico-->
+        <div *ngFor="let financing of financings; ">
+            <div class="col-xs-12 col-sm-7 financing {{financing.verVideo}} ">
+                <div class="membership">
+                    <iframe class="embed-responsive-item shadow" [src]="getVideoIframe(financing.videoEsp)" frameborder="0" allow="accelerometer; autoplay;  " allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 bord {{financing.verImagen}}">
+                <img src="{{financing.image}}" class="shadow " alt="Vali Spa {{financing.title}}">
+            </div>
         </div>
         <div class="clear"></div>
         <br>
@@ -62,7 +75,7 @@
                 </ul>
             </div>
         </a>
-        <a href="https://squareinstallments.com/apply/vsm " target="_blank" rel="noopener noreferrer">
+        <!--a href="https://squareinstallments.com/apply/vsm " target="_blank" rel="noopener noreferrer">
             <div class="promofinancing ">
 
                 <img src="assets/svg/Logos-cuadros_square.svg" alt="Vali Spa square">
@@ -72,7 +85,16 @@
                     <li>12 Meses</li>
                 </ul>
             </div>
-        </a>
+        </a-->
+        <div class="promofinancing ">
+
+            <img src="assets/svg/Logos-cuadros_square.svg" alt="Vali Spa square">
+            <ul>
+                <li>3 Pagos Mensuales</li>
+                <li>6 Meses</li>
+                <li>12 Meses</li>
+            </ul>
+        </div>
         <div class=" promofinancing ">
             <img src="assets/svg/Logos-cuadros_vali.svg" alt="Vali Spa ">
             <ul>
